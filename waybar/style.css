@@ -1,0 +1,61 @@
+/* Just css nothing to see here... */
+* { font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    border: none;
+    transition: all 0.1s ease; 
+    font-weight: 700; 
+}
+
+
+window#waybar {
+    background: rgba(10, 10, 20, 0.2);
+    color: #f4f4f8;
+}
+
+#workspaces button,
+#clock,
+#network,
+#memory,
+#cpu,
+#custom-power {
+    padding: 4px 8px;
+    margin: 1px 2px;
+    background: rgba(20, 10, 30, 0.6);
+    border-radius: 2px;
+    border: 1px solid rgba(255, 0, 255, 0.4);
+}
+
+#cpu:hover,
+#network:hover,
+#custom-power:hover,
+#memory:hover,
+#clock:hover{
+    background: rgba(255, 0, 255, 0.15);
+    border-color: rgba(170, 80, 255, 0.6);
+}
+
+
+#workspaces button {
+    color: #ffffff;
+    background: rgba(30, 0, 40, 0.4);
+    border: 1px solid rgba(170, 80, 255, 0.4);
+}
+
+#workspaces button.active {
+    background: rgba(255, 0, 180, 0.4);
+    border-color: #ff00cc;
+}
+
+#workspaces button:hover {
+    background: rgba(255, 0, 255, 0.15);
+    border-color: rgba(170, 80, 255, 0.6);
+}
+
+
+#custom-power {
+    font-size: 16px;
+}
+
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
