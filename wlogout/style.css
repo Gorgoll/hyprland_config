@@ -1,28 +1,31 @@
 * {
-	background-image: none;
-	box-shadow: none;
+    font-family: "Inter", sans-serif;
+    color: #ffffff;
 }
 
 window {
-	background-color: rgba(12, 12, 12, 0.9);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 button {
-    border-radius: 0;
-    border-color: black;
-	text-decoration-color: #FFFFFF;
-    color: #FFFFFF;
-	background-color: #1E1E1E;
-	border-style: solid;
-	border-width: 1px;
+    background-color: rgba(20, 0, 30, 0.5);
+    border: 3px solid rgb(130, 1, 236);
 	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 25%;
+    background-position: center 35%;
+	background-size: 30%;
+    border-radius: 8px;
+    transition: 0.2s;
+	margin: 2px;
 }
 
-button:focus, button:active, button:hover {
-	background-color: #3700B3;
-	outline-style: none;
+button:hover {
+    background-color: rgba(110, 0, 165, 0.9);
+    border-color: rgb(247, 0, 255);
+}
+
+button label {
+    font-size: 18px;
+    color: #ffffff;
 }
 
 #lock {

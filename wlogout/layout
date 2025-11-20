@@ -1,4 +1,10 @@
 {
+    "label" : "shutdown",
+    "action" : "systemctl poweroff",
+    "text" : "Shutdown",
+    "keybind" : "s"
+}
+{
     "label" : "lock",
     "action" : "loginctl lock-session",
     "text" : "Lock",
@@ -15,12 +21,6 @@
     "action" : "loginctl terminate-user $USER",
     "text" : "Logout",
     "keybind" : "e"
-}
-{
-    "label" : "shutdown",
-    "action" : "systemctl poweroff",
-    "text" : "Shutdown",
-    "keybind" : "s"
 }
 {
     "label" : "suspend",
