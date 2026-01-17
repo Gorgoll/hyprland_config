@@ -8,6 +8,7 @@
     "modules-center": ["clock"],
     "modules-right": [
         "memory",
+        "custom/gpu",
         "cpu",
         "network",
         "custom/power"
@@ -47,10 +48,25 @@
         "tooltip": true,
         "format-bar": "#####",
         "max-length": 25,
+        
         "states": {
             "medium": 50,
             "high": 90
         }
+        /* im pretty sure this is usesless 
+        ^
+        |
+        */
+    },
+
+    // GPU usage and Vram (gpu usage may be wrong cuz no clock is present so its mostly for vram (: )
+    "custom/gpu": {
+        "interval": 2,
+        // Also run chmod +x on this file to make it a executable
+        "exec": "bash ~/.config/waybar/scripts/gpu-info.sh",
+        "format": "{}",
+        "tooltip": false,
+        "max-length": 30
     },
 
     // Memory Usage

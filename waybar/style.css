@@ -17,6 +17,7 @@ window#waybar {
 #network,
 #memory,
 #cpu,
+#custom-gpu,
 #custom-power {
     padding: 4px 8px;
     margin: 1px 2px;
@@ -26,6 +27,7 @@ window#waybar {
 }
 
 #cpu:hover,
+#custom-gpu:hover,
 #network:hover,
 #custom-power:hover,
 #memory:hover,
